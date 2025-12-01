@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Section</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="faq-container">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">What are the college admission procedures?</button>
+    <div class="faq-answer">
+      <p>The admission process includes filling out the online application, attending counseling, and submitting necessary documents.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What is the semester fees?</button>
+    <div class="faq-answer">
+      <p>The semester fee is ₹45,000 (varies by course). Installment options are available.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What are college working hours?</button>
+    <div class="faq-answer">
+      <p>College timings are 9:00 AM to 4:30 PM from Monday to Saturday.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Does the college provide hostel facilities?</button>
+    <div class="faq-answer">
+      <p>Yes, separate hostels are available for boys and girls with 24/7 security.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// FAQ Toggle Script
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    answer.classList.toggle("active");
+  });
+});
+</script>
+
+</body>
+</html>
